@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<!-- <link rel="stylesheet" type="text/css" href="./css/style.css"> -->
+	<style>
+		@import url("./css/style.css");
+	</style>
+
+	<style>
+
+		.abc{
+			color:red;
+			background-color: orange;	
+		}
+	</style>
+
+</head>
+<body>
+
+
+<form name="f1">
+
+	<table border="1" align="center" cellpadding="5" cellspacing="5">
+		<tr>
+			<td colspan="6">  <input type="text" size="40" name="t1" placeholder="0.0"> </td>
+		</tr> 
+		<tr align="center">
+			<td> <input type="button" value="1" onclick="f1.t1.value+='1'"></td>
+			<td> <input type="button" value="2" onclick="f1.t1.value+='2'"></td>
+			<td> <input type="button" value="+" onclick="f1.t1.value+='+'"></td>
+			<td> <input type="reset" value="c"></td>
+			<td> <input type="button" value="=" onclick="f1.t1.value=eval(f1.t1.value)"></td>
+			<td> <input type="button" value="9" onclick="f1.t1.value+='9'"></td>
+
+		</tr>
+
+	</table>
+</form>
+
+<h1 style="color:red;background-color: orange;font-size: 50px;"> use of inline css</h1>
+<h2 class="abc"> use of internal css link</h2>
+<h3 class="second">use of external css link</h3>
+
+
+</body>
+</html>
+
