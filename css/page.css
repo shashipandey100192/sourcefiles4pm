@@ -1,0 +1,48 @@
+*
+{
+    margin:0 auto;
+    padding:0;
+}
+
+.row
+{
+    width:1200px;
+    height: 200px;
+    border:1px solid red;
+    display: flex;
+    margin-top:20px;
+}
+.row>section
+{
+    border:1px solid green;
+    flex:1;
+    margin:5px;
+}
+
+.navbar
+{
+    height: 50px;
+}
+.navbar>section:nth-child(2)
+{
+flex:2.4;
+}
+
+.gallery
+{
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.gallery>section
+{
+    flex:none;
+    width:280px;
+    height: 200px;
+    
+}
+.row>section>img
+{
+    width:100%;
+    height: 100%;
+}
