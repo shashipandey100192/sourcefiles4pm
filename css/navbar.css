@@ -53,12 +53,41 @@ p
     text-transform: capitalize;
 }
 
-main
+.columns
 {
     width: 1200px;
     text-align: justify;
     border:1px solid red;
     padding:10px;
-    columns:5;
+    columns:4;
     column-rule: 2px dotted gray;
+    column-gap: 30px;
+}
+.columns h3
+{
+    column-span: all;
+    padding-bottom: 50px;
+}
+
+.columns img
+{
+    width: 100%;
+}
+.columns p::first-letter
+{
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    float:left;
+    line-height: 50px;
+    font-weight: bold;
+}
+.columns h3::first-line
+{
+    color:red;
+}
+.columns span
+{
+    color:red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 5px;
 }
