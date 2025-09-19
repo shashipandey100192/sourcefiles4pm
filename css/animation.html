@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first
+        {
+            width:200px;
+            height: 100px;
+            background-color: rgb(1, 53, 53);
+            color:white;
+            /* animation-name: xyz;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+            animation-delay: 2000ms; */
+
+            animation:xyz 10s infinite alternate ease-in-out 3000ms;
+
+        }
+
+        /* @keyframes xyz {
+            from{}
+            to{margin-left:800px; background-color: green; width: 300px;}
+        } */
+
+         @keyframes xyz {
+            0%{margin-left:0;margin-top:0}
+            50%{margin-left:1000px;margin-top:0}
+            60%{margin-left:1000px;margin-top:500px}
+            95%{margin-left:500px;margin-top:250px}
+            100%{margin-left:0;margin-top:500px}
+        }
+    </style>
+</head>
+<body>
+
+
+
+ <div class="first">
+    use of css animation
+ </div>   
+    
+</body>
+</html>

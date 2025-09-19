@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin:0 auto;
+            padding:0;
+        }
+        .box
+        {
+            width:500px;
+            height: 200px;
+            background-color: orange;
+            text-align: center;
+            color:white;
+            font-size: 50px;
+            margin-top:50px;
+            /* transform: rotate(90deg); */
+            /* transform: skew(-30deg); */
+            /* transform: scale(1.5,1.5); */
+            /* transform: translate(200px,400px); */
+
+            /* transform: rotateY(180deg); */
+            transition-duration: 1s;
+        }
+
+        .box:hover
+        {
+            transform: rotate(180deg);
+            transition-duration: 1s;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <div class="box"> use of transform</div>
+    
+</body>
+</html>
