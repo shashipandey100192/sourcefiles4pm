@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul
+        {
+            list-style-type: none;
+        }
+        ul li::before
+        {
+            /* content:"mytext"; */
+            content:"\260E";
+            color:red;
+            margin-right:10px;
+        }
+        ul li::after
+        {
+            content: "--------------------------------------- \260E";
+            color:green;
+        }
+        .info span
+        {
+            background-color: aqua;
+            padding:10px;
+            border-radius: 10px;
+            margin-left:50px;
+            display: none;
+            text-align: center;
+        }
+        .info span::before{
+            content: "";
+            border-left:0px solid transparent;
+            border-top:5px solid transparent;
+            border-right:5px solid aqua;
+            border-bottom:5px solid transparent;
+            position: absolute;
+            margin-left:-13px;
+        }
+        :checked + span
+        {
+            display: inline-block;
+        }
+        .page
+        {
+            width:1200px;
+            height: 400px;
+            background-image:url("https://m.media-amazon.com/images/I/71SiLxdQ0jL._UF1000,1000_QL80_.jpg");
+            background-size: cover;
+            clip-path: polygon(0px 0px,1200px 0px,1200px 200px,600px 400px,0px 200px);
+            padding-top:50px;
+            background-position: top;
+            animation: backinfo 1s infinite alternate ease-in-out;
+        }
+        .page div
+        {
+            width:500px;
+            height: 100px;
+            padding:50px;
+            background-color: rgba(255,255,250,0.5);
+            text-align: center;
+            margin:0 auto;
+            box-shadow: 2px 5px 10px black;
+           
+        }
+        @keyframes backinfo {
+            from{}
+            to{background-position: bottom;}
+        }
+
+        .mytext
+        {
+            font-size: 80px;
+            font-family: arial black;
+            text-transform: uppercase;
+            word-spacing: 10px;
+            letter-spacing: 10px;
+            text-align: center;
+            line-height: 70px;
+            background:linear-gradient(red,orange,blue,pink);
+            color:transparent;
+            background-clip: text;
+        }
+        body
+        {
+            filter: grayscale(100%);
+        }
+
+
+    </style>
+    
+</head>
+<body>
+
+<div class="page">
+    <div>
+        <h1>heading kksjfjk hsdj fhsjkd hfjks hdjk</h1>
+    </div>
+</div>
+<h2 class="mytext">use of background clip</h2>
+
+
+
+<ul>
+    <li> home</li>
+    <li>home</li>
+    <li>home</li>
+    <li>home</li>
+    <li>home</li>
+    <li>home</li>
+    <li>home</li>
+    <li>home</li>
+    <li>home</li>
+    <li>home</li>
+</ul>    
+<div class="info">
+   <input type="checkbox"> <span>sdjfksjdf skld jfhjks dhfjks dhfjkshdfg</span>
+</div>
+
+
+    
+</body>
+</html>
