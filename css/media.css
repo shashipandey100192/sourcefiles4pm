@@ -1,0 +1,58 @@
+*
+{
+    margin:0 auto;
+    padding:0;
+}
+body{
+
+    background-color: aqua;
+}
+h1{
+    text-align: center;
+}
+
+@keyframes abc {
+        from{}
+        to{color:red;background-color: orange;}
+}
+
+
+
+
+
+@media(max-width:1200px)
+{
+    body{
+        background-color: azure;
+    }
+    h1
+    {
+        text-transform: uppercase;
+        color:red;
+        font-size: 50px;
+    }
+}
+
+
+
+
+@media(max-width:900px)
+{
+    body{
+        background-color: rgb(158, 248, 14);
+    }
+}
+
+
+
+@media(max-width:500px)
+{
+    body{
+        background-color: rgb(54, 57, 241);
+    }
+    h1
+    {
+        animation:abc 1s infinite alternate;
+    }
+}
+
