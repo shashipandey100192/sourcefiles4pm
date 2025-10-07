@@ -1,0 +1,61 @@
+
+@media print{
+
+@page
+{
+    size: A4 portrait;
+    margin:20px;
+}
+    .header
+    {
+        display: none;
+
+    }
+    body,.page
+    {
+        background-color: transparent;
+    }
+    .page p
+    {
+        column-count: 1;
+    }
+    header p{
+        display: block;
+    }
+   
+    .mypage header
+    {
+        page-break-before: always;
+        display: block;
+        /* border:1px solid red; */
+    }
+    .page div:last-child
+    {
+        display: block;
+    }
+    *
+    {
+        margin:0 auto;
+        padding:0;
+        box-sizing: border-box;
+    }
+    .webpage section
+    {
+        margin:0;
+        padding:0;
+    }
+
+nav,aside{
+    display: block;
+    position: fixed;
+}
+aside
+{
+    top:0;
+}
+nav
+{
+    bottom:0;
+}
+
+}

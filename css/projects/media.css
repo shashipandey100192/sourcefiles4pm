@@ -1,0 +1,43 @@
+@media(max-width:900px) {
+    body {
+        background-color: rgb(194, 245, 228);
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .page {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .webpage {
+        width: 100%;
+        grid-template-columns: 100%;
+    }
+
+}
+
+
+
+@media(max-width:500px) {
+    body {
+        background-color: rgb(56, 255, 189);
+    }
+
+    .page p {
+        column-count: 2;
+        column-rule: 2px dotted var(--bg);
+    }
+
+    .page div:last-child {
+        display: flex;
+        flex-direction: column;
+    }
+    .webpage {
+        
+        grid-template-rows: 80px auto 80px;
+    }
+
+}
