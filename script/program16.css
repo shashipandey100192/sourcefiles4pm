@@ -1,0 +1,44 @@
+*
+{
+    margin:0 auto;
+    padding:0;
+
+}
+button
+{
+    padding:10px;
+    position: fixed;
+    right:0;
+    font-size: 20px;
+    border:none;
+    background-color:transparent;
+    cursor: pointer;
+}
+#apps
+{
+    width:300px;
+    min-height: 300px;
+    height: 300px;
+    border:1px solid red;
+    position: fixed;
+    right: 10px;
+    top:30px;
+    display: flex;
+    flex-wrap: wrap;
+    visibility: hidden;
+    overflow: scroll;
+}
+#apps section
+{
+    width:80px;
+    min-height: 50px;
+    border:1px solid blue;
+    background-color: antiquewhite;
+    box-shadow: 2px 2px 5px black;
+    margin:5px;
+    text-align: center;
+}
+#apps section img
+{
+    width: 80%;
+}

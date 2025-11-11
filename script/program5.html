@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<input type="button" value="change">
+<input type="button" value="submit">
+
+<script>
+
+let myele = document.getElementsByTagName('input');
+console.log(myele);
+
+myele[0].addEventListener("click",()=>{
+    myele[0].setAttribute("title","this is my button");
+    myele[0].setAttribute("disabled","disabled");
+});
+
+myele[1].addEventListener("click",()=>{
+    myele[0].removeAttribute("disabled");
+});
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

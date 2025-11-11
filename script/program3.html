@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>heading1</h1>
+<h1>heading2</h1>
+<h1>heading3</h1>
+<p class="one">this is my text</p>
+<div class="one">this is my div</div>
+<section>this is block</section>
+<section>this is block</section>
+<section id="two">this is block</section>
+<section>this is block</section>
+<section>this is block</section>
+<input type="button" value="submit">
+<button>info</button>
+<button>info</button>
+
+<script>
+
+// var myele = document.getElementById('two');
+// var myele = document.getElementsByClassName('one');
+// var myele = document.getElementsByTagName("h1");
+// var myele = document.querySelector("h1,p,div,.one,#two");
+var myele = document.querySelectorAll("h1,p,div,.one,#two");
+console.log(myele);
+console.log(typeof(myele));
+
+
+</script>
+</body>
+</html>

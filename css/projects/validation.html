@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul {
+            list-style-type: none;
+        }
+
+        input {
+            padding: 5px;
+            margin-top: 5px;
+            border: none;
+        }
+
+        /* input:required
+        {
+            border:1px solid red;
+        } */
+        input:focus-visible {
+           outline: none;
+        }
+
+        input:valid {
+            background-color: rgb(168, 247, 168);
+            border: 2px solid rgb(0, 48, 0);
+            color: green;
+        }
+
+        input:invalid {
+            background-color: rgb(247, 168, 168);
+            border:2px solid rgb(48, 0, 0);
+            color: rgb(128, 0, 0);
+        }
+        input:in-range
+        {
+            color:white;
+            font-family: arial black;
+        }
+        input:out-of-range
+        {
+            color:orangered;
+            background-color: red;
+        }
+        .first
+        {
+            height: 800px;
+        }
+::-webkit-scrollbar-track
+{
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #b37575;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #f10505;
+}
+
+
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <ul>
+            <li> <input type="text" placeholder="username" required pattern="[a-z]{5,}"></li>
+            <li> <input type="date" required></li>
+            <li> <input type="tel" placeholder="phone" required pattern="[0-9]{10}" maxlength="10"></li>
+            <li> <input type="number" placeholder="age" required min="10" max="50"></li>
+            <li> <input type="submit" value="submit"></li>
+            <li> <button>submit</button></li>
+        </ul>
+    </form>
+
+    <div class="first"></div>
+
+
+
+
+
+
+</body>
+
+</html>

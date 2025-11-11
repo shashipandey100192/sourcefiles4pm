@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<input type="button" value="submit" onclick="abc()">
+
+<button>dyneventa</button>
+<button>dyneventb</button>
+<button>dyneventc</button>
+<button>dyneventd</button>
+<button>dynevente</button>
+
+<script>
+function abc()
+{
+    alert("welcome to javascript");
+}
+
+var mybtn = document.querySelectorAll("button");
+console.log(mybtn);
+
+//named func
+mybtn[0].addEventListener("click",abc);
+
+// ano func
+mybtn[1].addEventListener("click",function(){
+    alert("this is ano function in javascript");
+});
+
+//arrow func
+mybtn[2].addEventListener("click",()=>{
+    alert("this is Arrow function in javascript");
+});
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

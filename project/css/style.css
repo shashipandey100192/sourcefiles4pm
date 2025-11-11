@@ -1,0 +1,90 @@
+*
+{
+    margin:0 auto;
+    padding:0;
+}
+
+.page
+{
+    width:1200px;
+    min-height: 800px;
+    max-height: fit-content;
+    border:1px solid red;
+    margin-top:60px;
+}
+ul
+{
+    list-style-type: none;
+    display: flex;
+    height: 60px;
+    background-color: rgb(46, 61, 56);
+    position: fixed;
+    width: 100%;
+    top:0;
+}
+ul li
+{
+    border:1px solid green;
+    flex:1;
+    text-align: center;
+    line-height: 60px;
+}
+ul li a
+{
+    background-color: rgb(0, 255, 55);
+    width: 100%;
+    height: 60px;
+    float:left;
+}
+/* css for login page------------------------------------- */
+.login
+{
+    width:100%;
+    height: 100vh;
+    border:1px solid green;
+    display: flex;
+    align-items: center;
+    background-color: rgb(193, 193, 250);
+}
+.login section
+{
+    background-color: orange;
+    padding:50px;
+}
+
+/* css for about  page--------------------------------------------------*/
+ .slider
+ {
+    width:100%;
+    height: 300px;
+    border:1px solid red;
+    overflow: hidden;
+ }
+ .slider section
+ {
+    width:300%;
+    height: 300px;
+    border:1px solid blue;
+    position: relative;
+    animation:myslide 10s infinite alternate ease-in-out;
+ }
+ .slider img
+ {
+    width:33.33%;
+    height: 300px;
+    float:left;
+ }
+
+ @keyframes myslide {
+    0%{left:0%}
+    33%{left:0%}
+    40%{left:-100%}
+    66%{left:-100%}
+    73%{left:-200%}
+    100%{left:-200%}
+ }
+ /* css for contact page------------------------------------------*/
+ .myheading
+ {
+    animation:bounce 1s infinite alternate;
+ }
