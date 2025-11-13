@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>sdf</h1>
+    <p>this is te</p>
+<input type="text" placeholder="username"><br>
+<input type="email" placeholder="email"><br>
+<input type="button" value="add data" onclick="abc()">
+
+<script>
+var myarr = [];
+
+function abc()
+{
+    var myinput = document.querySelectorAll('input');
+    myarr.push({username:myinput[0].value,email:myinput[1].value});
+    console.log(myarr);
+    localStorage.setItem("locadata",JSON.stringify(myarr));
+    sessionStorage.setItem("mysession",myarr);
+}
+
+
+</script>
+
+    
+</body>
+</html>
