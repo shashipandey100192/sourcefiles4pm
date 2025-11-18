@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2></h2>
+    <script>
+        // var a = "this is text";
+        // var b =new String("this is text");
+
+        // console.log(a);
+        // console.log(typeof(a));
+
+        // console.log(b);
+        // console.log(typeof(b));
+
+        var allh = document.querySelectorAll("h2");
+
+        var c = navigator.appVersion;
+
+        var mytext = new String(c);
+        console.log(mytext);
+
+        // var v = mytext[73]+mytext[74]+mytext[75]+mytext[76]+mytext[77]+mytext[78]+mytext[79]+mytext[80];
+        //  allh[0].innerHTML=v;
+
+
+        // var start = 73;
+        // var stop = 90;
+
+        // for (start; start <= stop; start++) {
+        //     allh[0].innerHTML += mytext[start];
+        // }
+
+        
+        var a = mytext.slice(73,90);
+        allh[0].innerHTML=a;
+
+
+    </script>
+
+</body>
+
+</html>

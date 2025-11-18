@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <input type="button" value="show message" onclick="xyz()">
+
+    <script>
+
+        // function Mypattern(name,age,salary)
+        // {
+        //     this.sname= name;
+        //     this.sage=age;
+        //     this.ssalary = salary;
+
+        // }
+
+        // console.log(Mypattern);
+        // console.log(typeof(Mypattern));
+
+        class Mypattern {
+            constructor(name, age, salary) {
+                this.sname = name;
+                this.sage = age;
+                this.ssalary = salary;
+                this.dis = ()=>{
+                    return `fees discount is: ${this.fees*20/100}`; 
+                };
+                this.msg = function()
+                {
+                    return alert(`${this.sname} and ${this.ssalary}`);
+                }
+            }
+        }
+        Mypattern.prototype.fees =6000;
+        Mypattern.prototype.classtime="4pm";
+
+        var emp = new Mypattern("kumar", 20,5000);
+
+        console.log(emp);
+        console.log(typeof (emp));
+        var heading = document.querySelectorAll('h1');
+        heading[0].innerHTML = emp.sname;
+        heading[1].innerHTML = emp.sage;
+        heading[2].innerHTML = emp.classtime;
+        heading[3].innerHTML=emp.dis();
+
+function xyz()
+{
+    emp.msg();
+}
+
+    </script>
+
+
+
+</body>
+
+</html>
