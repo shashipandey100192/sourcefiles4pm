@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Comic+Relief:wght@400;700&family=Concert+One&family=Condiment&family=Michroma&family=Permanent+Marker&family=Potta+One&display=swap');
+    </style>
+
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        #cap {
+            font-family: "Comic Relief", system-ui;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 80px;
+            letter-spacing: 20px;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 30px;
+        }
+
+        button {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="cap"></h1>
+    <input type="text" id="xyz" maxlength="4">
+    <button type="button" onclick="otpvalidation()">validation</button>
+
+
+    <script>
+
+        var jcap, jxyz,a;
+        function gcaptch() {
+            jxyz = document.getElementById("xyz");
+            jcap = document.getElementById('cap');
+            a = parseInt((Math.random() + 1) * 4352);
+            console.log(a);
+            jcap.innerHTML = a;
+        }
+        gcaptch();
+        // setInterval("gcaptch()",5000);
+
+
+        function otpvalidation() {
+            if (jxyz.value == "") {
+                alert("captch is blank");
+            }
+            else {
+                if (jxyz.value == a) {
+                    alert("welcome to");
+                   setTimeout(()=>{
+                     location.href="http://google.com";
+                   },2000);
+                }
+                else {
+                    alert("captch is invalid");
+                    gcaptch();
+                    jxyz.value="";
+                    jxyz.focus();
+
+                }
+            }
+
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>
