@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mycap input {
+            font-size: 29px;
+            padding: 5px;
+            width: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1></h1>
+
+    <div class="mycap">
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+    </div>
+    <button type="button">submit</button>
+
+    <script>
+        var jcap = document.querySelector("h1");
+        // var a = parseInt((Math.random()+1)*435236);
+        // var mytext="JKGHJKNMLKHJHFGDFJMLJJKGHFGDCJM";
+
+        var a = parseInt((Math.random() + 1) * 4352);
+        var b;
+        if (a >= 8000) {
+            b = "G";
+        }
+        else if (a >= 7000) {
+            b = "X";
+        }
+        else if (a >= 6000) {
+            b = "C";
+        }
+        else if (a >= 5000) {
+            b = "u";
+        }
+        else {
+            b = "Z";
+        }
+
+        var mycap;
+        if (a >= 6000) {
+            mycap = a + b;
+        }
+        else {
+            mycap = b + a;
+        }
+
+        console.log(a);
+        jcap.innerHTML = mycap;
+
+
+        var myinput = document.querySelector(".mycap").children;
+        var finalcap;
+        console.log(myinput);
+        myinput[0].focus();
+        myinput[0].addEventListener("input", () => {
+            check()
+            myinput[1].focus();
+
+        });
+        myinput[1].addEventListener("input", () => {
+            check()
+            myinput[2].focus();
+
+        });
+        myinput[2].addEventListener("input", () => {
+            check()
+            myinput[3].focus();
+
+        });
+        myinput[3].addEventListener("input", () => {
+            check()
+            myinput[4].focus();
+
+        });
+        myinput[4].addEventListener("input", () => {
+            check()
+        });
+
+        function check() {
+            finalcap = myinput[0].value + myinput[1].value + myinput[2].value + myinput[3].value + myinput[4].value;
+            console.log(finalcap);
+            if (finalcap == mycap) {
+                alert("welcome to");
+            }
+            
+           
+
+        }
+
+    </script>
+</body>
+
+</html>

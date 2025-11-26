@@ -1,0 +1,42 @@
+*
+{
+    margin:0 auto;
+    padding:0;
+}
+
+.first,div
+{
+    width:1200px;
+    height: auto;
+    border:1px solid red;
+    padding:10px;
+    margin-top:20px;
+}
+
+.first p
+{
+    width: 80%;
+    height: auto;
+    padding:20px;
+    box-sizing: border-box;
+    background-color: aquamarine;
+    border:1px solid orange;
+}
+div button
+{
+    padding:10px;
+}
+#more
+{
+    display: none;
+}
+.third
+{
+    background:linear-gradient(rgb(255, 226, 173),rgb(253, 203, 110));
+}
+.third h5
+{
+    margin-top:10px;
+    cursor: pointer;
+    display: inline-block;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .style1 {
+            background-color: orange;
+            color: white;
+        }
+
+        .style1 h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        .style2 {
+            background-color: rgb(255, 0, 0);
+            color: rgb(217, 255, 0);
+
+        }
+
+        .style2 h1 {
+            font-size: 30px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .style3 {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            padding:20px;
+           
+
+        }
+
+        .style3 h1 {
+            font-size: 20px;
+            text-align: left;
+            text-transform: uppercase;
+            font-family: Arial black;
+        }
+    </style>
+</head>
+
+<body onresize="mypage()">
+
+    <div></div>
+
+
+    <script>
+
+        function mypage() {
+            var a = screen;
+            console.log(a);
+            jdiv = document.querySelector("div");
+            jbody = document.querySelector("body");
+            jdiv.innerHTML = ` 
+        <h1>screen width : ${a.width}</h1>
+        <h1>screen height : ${a.height}</h1>
+        <h1>screen type : ${a.orientation.type}</h1>
+         <h1>screen angle : ${a.orientation.angle}</h1>
+    `;
+
+            if (a.width >= 1200) {
+                jbody.className = "style1";
+            }
+            else if(a.width>=900)
+            {
+                jbody.className="style2";
+            }
+            else
+            {
+                jbody.className="style3";
+            }
+
+            if(a.orientation.type=="landscape-primary")
+            {
+                alert("can't reach out");
+
+            }
+        }
+
+        mypage();
+
+    </script>
+
+
+
+
+</body>
+
+</html>
